@@ -60,8 +60,8 @@ from orders_per_user
 
 ```
 **Answer:**
-one purchase: 25
-two purchases: 38
+one purchase: 25,
+two purchases: 38,
 three+ purchases: 71
 
 ---
