@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_addresses
+    description: addresses from raw source
+  - name: stg_events
+    description: events from raw source
+  - name: stg_order_items
+    description: order items from raw source
+  - name: stg_orders
+    description: orders from raw source
+  - name: stg_products
+    description: products from raw source
+  - name: stg_promos
+    description: promos from raw source
+  - name: stg_users
+    description: users from raw source

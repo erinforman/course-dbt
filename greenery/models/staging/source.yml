@@ -1,0 +1,46 @@
+version: 2
+
+sources:
+
+  - name: tutorial
+    schema: public
+    database: dbt
+
+    quoting:
+      database: false
+      schema: false
+      identifier: false
+
+    freshness:
+      warn_after: {count: 24, period: hour}
+      error_after: {count: 48, period: hour}
+
+    tables:
+      - name: addresses
+        loaded_at_field: created_at
+        description: >
+          Contains addresses
+      - name: events
+        loaded_at_field: created_at
+        description: >
+          Contains events
+      - name: order_items
+        loaded_at_field: created_at
+        description: >
+          Contains order items
+      - name: orders
+        loaded_at_field: created_at
+        description: >
+          Contains orders
+      - name: products
+        loaded_at_field: created_at
+        description: >
+          Contains products
+      - name: promos
+        loaded_at_field: created_at
+        description: >
+          Contains promos
+      - name: users
+        loaded_at_field: created_at
+        description: >
+          Contains users
