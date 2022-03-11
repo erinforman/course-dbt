@@ -63,6 +63,7 @@ from orders_per_user
 one purchase: 25
 two purchases: 38
 three+ purchases: 71
+
 ---
 
 **Question 5:** On average, how many unique sessions do we have per hour?
