@@ -12,9 +12,9 @@ with source as (
 renamed as (
     select
         product_id,
-        name,
-        price,
-        inventory
+        name as product_name,
+        price as price_usd,
+        inventory as inventory_count
     from
         source
 )

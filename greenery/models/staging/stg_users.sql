@@ -16,8 +16,8 @@ renamed as (
         last_name,
         email,
         phone_number,
-        created_at,
-        updated_at,
+        created_at as user_created_at,
+        updated_at as user_updated_at,
         address_id
     from
         {{ source('src_postgres', 'users')}}

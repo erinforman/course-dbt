@@ -14,15 +14,15 @@ renamed as (
         user_id,
         promo_id,
         address_id,
-        created_at,
-        order_cost,
-        shipping_cost,
-        order_total,
-        tracking_id,
         shipping_service,
+        tracking_id,
+        order_cost as order_cost_usd,
+        shipping_cost as shipping_cost_usd,
+        order_total as order_total_usd,
+        created_at as order_created_at,
         estimated_delivery_at,
         delivered_at,
-        status
+        status as order_status
     from
         source
 )

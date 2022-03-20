@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: int_page_views
+    description: todo
+    # columns:
+    #   - name: order_id
+    #     tests:
+    #       - not_null
+    #       - unique
+  - name: fact_page_views
+    description: todo
