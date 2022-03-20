@@ -33,12 +33,9 @@ models:
       - name: event_type
         tests:
           - not_null
-      - name: page_url
       - name: created_at
         tests:
           - not_null
-      - name: order_id
-      - name: product_id
   - name: stg_order_items
     description: details about items in each order
     columns:
@@ -58,21 +55,12 @@ models:
         tests:
           - not_null
           - unique
-      - name: promo_id
       - name: user_id
         tests:
           - not_null
       - name: address_id
         tests:
           - not_null
-      - name: created_at
-      - name: order_cost_usd
-      - name: shipping_cost_usd
-      - name: tracking_id
-      - name: shipping_service
-      - name: estimated_delivery_at_utc
-      - name: delivered_at_utc
-      - name: status
   - name: stg_products
     description: product information including price and inventory details
     columns:
@@ -109,12 +97,6 @@ models:
         tests:
           - not_null
           - unique
-      - name: first_name
-      - name: last_name
-      - name: email 
-      - name: phone_number 
-      - name: created_at 
-      - name: updated_at
       - name: address_id 
         tests:
           - not_null 
