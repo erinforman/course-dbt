@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: int_user_order
+    description: todo
+    # columns:
+    #   - name: order_id
+    #     tests:
+    #       - not_null
+    #       - unique
+  - name: fact_user_order
+    description: todo
