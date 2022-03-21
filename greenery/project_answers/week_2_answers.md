@@ -43,6 +43,10 @@ first_name, last_name, and email would be helpful for merge variables. The last 
 
 * I created `fact_page` in the `product` mart as a page stats table. If the product team was A/B testing the performance of a page (page_id instead of page_url would be helpful here), one could query this table to get an idea of which verison was performing better by certain metrics.
 
+---
+
+**DAG visualizations**
+
 <img src="https://github.com/erinforman/course-dbt/blob/main/greenery/project_answers/screenshots/Screenshot_2022-03-20%2017.28.18_h3E1pW.png" height="600" />
 <img src="https://github.com/erinforman/course-dbt/blob/main/greenery/project_answers/screenshots/Screenshot_2022-03-20%2017.28.43_TVepVF.png" height="600" />
 <img src="https://github.com/erinforman/course-dbt/blob/main/greenery/project_answers/screenshots/Screenshot_2022-03-20%2017.28.59_nvXcga.png" height="600" />
