@@ -46,7 +46,7 @@ first_name, last_name, and email would be helpful for merge variables. The last 
 ---
 
 **DAG visualizations**
-
+<img src="https://github.com/erinforman/course-dbt/blob/main/greenery/project_answers/screenshots/Screenshot_2022-03-20%2017.55.13_GuF7KJ.png" height="600" />
 <img src="https://github.com/erinforman/course-dbt/blob/main/greenery/project_answers/screenshots/Screenshot_2022-03-20%2017.28.18_h3E1pW.png" height="600" />
 <img src="https://github.com/erinforman/course-dbt/blob/main/greenery/project_answers/screenshots/Screenshot_2022-03-20%2017.28.43_TVepVF.png" height="600" />
 <img src="https://github.com/erinforman/course-dbt/blob/main/greenery/project_answers/screenshots/Screenshot_2022-03-20%2017.28.59_nvXcga.png" height="600" />
