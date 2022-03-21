@@ -1,12 +1,35 @@
 version: 2
 
 models:
-  - name: int_page_views
+
+  - name: int_user_session
     description: todo
-    # columns:
-    #   - name: order_id
-    #     tests:
-    #       - not_null
-    #       - unique
-  - name: fact_page_views
-    description: todo
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+      - name: session_id
+        tests:
+          - not_null
+          - unique
+
+  - name: fact_page
+    description: page stats
+    columns:
+      - name: page_url
+        tests: 
+          - not_null
+  
+  - name: fact_user_session
+    description: user session lengths
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+      - name: session_id
+        tests:
+          - not_null
+          - unique
+      - name: session_length
+        tests:
+          - not_null

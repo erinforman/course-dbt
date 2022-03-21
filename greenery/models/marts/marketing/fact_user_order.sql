@@ -42,6 +42,7 @@ order_items as (
 
 select
     u.*,
+    o.order_id,
     o.promo_id,
     o.order_cost_usd,
     o.shipping_cost_usd,

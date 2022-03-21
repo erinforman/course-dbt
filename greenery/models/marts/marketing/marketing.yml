@@ -1,12 +1,35 @@
 version: 2
 
 models:
-  - name: int_user_order
-    description: todo
-    # columns:
-    #   - name: order_id
-    #     tests:
-    #       - not_null
-    #       - unique
+
+  - name: int_order_items
+    description: product aggregations in orders
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+      - name: user_id
+        tests:
+          - not_null
+      - name: count_of_products
+        tests:
+          - not_null
+          - positive_values
+      - name: count_of_distinct_products
+        tests:
+          - not_null
+          - positive_values
+
   - name: fact_user_order
-    description: todo
+    description: user level order details
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+      - name: user_id
+        tests:
+          - not_null
+
+

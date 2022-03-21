@@ -1,18 +1,63 @@
 version: 2
 
 models:
+
   - name: int_orders
-    description: orders with delivery performance
+    description: order information with delivery performance
+    columns:
+      - name: order_id 
+        tests:
+          - not_null
+          - unique
+
   - name: dim_products
-    description: todo
-    # columns:
-    #   - name: order_id
-    #     tests:
-    #       - not_null
-    #       - unique
+    description: product information
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+          - unique
+      - name: price_usd
+        tests:
+          - not_null
+          - positive_values
+  
   - name: dim_users
-    description: todo
+    description: user information
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+          - unique
+      - name: user_created_at
+        tests:
+          - not_null
+  
   - name: fact_events
-    description: todo
+    description: event information
+    columns:
+      - name: event_id
+        tests:
+          - not_null
+          - unique
+      - name: event_type
+        tests:
+          - not_null
+          - accepted_values: 
+              values: ['add_to_cart', 'checkout', 'page_view', 'package_shipped']
+      - name: event_created_at
+        tests:
+          - not_null
+
   - name: fact_orders
-    description: todo
+    description: order information
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+      - name: user_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref ('dim_users')
+              field: user_id
